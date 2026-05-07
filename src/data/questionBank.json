@@ -1,0 +1,144 @@
+{
+  "pizza": [
+    {
+      "id": "pz_1",
+      "type": "pizza",
+      "question": "¡El alienígena tiene hambre! Dale exactamente 1/2 de la pizza.",
+      "targetNumerator": 1,
+      "targetDenominator": 2
+    },
+    {
+      "id": "pz_2",
+      "type": "pizza",
+      "question": "Preparando orden: Necesitamos 3/4 de la pizza estelar.",
+      "targetNumerator": 3,
+      "targetDenominator": 4
+    }
+  ],
+  "memory": [
+    {
+      "id": "mem_1",
+      "question": "Encuentra las parejas equivalentes",
+      "pairs": [
+        {
+          "id": "p1",
+          "text": "1/2",
+          "visualNumerator": 2,
+          "visualDenominator": 4
+        },
+        {
+          "id": "p2",
+          "text": "1/3",
+          "visualNumerator": 2,
+          "visualDenominator": 6
+        },
+        {
+          "id": "p3",
+          "text": "3/4",
+          "visualNumerator": 6,
+          "visualDenominator": 8
+        }
+      ]
+    }
+  ],
+  "select": [
+    {
+      "id": "sel_1",
+      "question": "¿Qué fracción representa la parte encendida del panel?",
+      "visualNumerator": 2,
+      "visualDenominator": 5,
+      "options": [
+        {
+          "text": "2/5",
+          "correct": true
+        },
+        {
+          "text": "3/5",
+          "correct": false
+        },
+        {
+          "text": "1/5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "sel_2",
+      "question": "Selecciona la fracción correcta",
+      "visualNumerator": 3,
+      "visualDenominator": 8,
+      "options": [
+        {
+          "text": "3/8",
+          "correct": true
+        },
+        {
+          "text": "5/8",
+          "correct": false
+        },
+        {
+          "text": "1/4",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "compare": [
+    {
+      "id": "comp_1",
+      "question": "¡Destruye el meteorito con la fracción MAYOR!",
+      "fractions": [
+        {
+          "numerator": 1,
+          "denominator": 3
+        },
+        {
+          "numerator": 2,
+          "denominator": 3
+        }
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "comp_2",
+      "question": "¡Destruye el meteorito con la fracción MAYOR!",
+      "fractions": [
+        {
+          "numerator": 1,
+          "denominator": 2
+        },
+        {
+          "numerator": 1,
+          "denominator": 4
+        }
+      ],
+      "correctIndex": 0
+    }
+  ],
+  "challenge": [
+    {
+      "id": "chal_1",
+      "question": "¡Reto Final! Ordena los núcleos de energía de MENOR a MAYOR",
+      "fractions": [
+        {
+          "id": "f1",
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        {
+          "id": "f2",
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        {
+          "id": "f3",
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        }
+      ]
+    }
+  ]
+}
