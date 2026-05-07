@@ -19,13 +19,22 @@ export function FractionCard({ numerator, denominator, className }: FractionCard
 }
 
 export function VisualFraction({ numerator, denominator, className }: FractionCardProps) {
+  // Elegir columnas de forma que el grid se vea ordenado
+  const cols = denominator % 3 === 0 ? 3 : 2;
+
   return (
-    <div className={cn("flex flex-wrap gap-1 w-16 h-16 bg-slate-800 p-1 rounded-md overflow-hidden", className)}>
+    <div 
+      className={cn("grid gap-1 w-16 h-16 bg-slate-800 p-1.5 rounded-md overflow-hidden", className)}
+      style={{ 
+        gridTemplateColumns: `repeat(${cols}, 1fr)`,
+        gridAutoRows: "1fr"
+      }}
+    >
       {Array.from({ length: denominator }).map((_, i) => (
         <div 
           key={i} 
           className={cn(
-            "flex-1 rounded-sm min-w-[30%] min-h-[30%]", 
+            "rounded-sm min-h-[10px]", 
             i < numerator ? "bg-cyan-400" : "bg-slate-600"
           )} 
         />

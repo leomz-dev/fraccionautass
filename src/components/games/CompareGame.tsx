@@ -17,7 +17,7 @@ export default function CompareGame({ questionData, onComplete }: Props) {
   useGSAP(() => {
     // Meteoritos cayendo
     gsap.from(".meteorite", {
-      y: -200,
+      y: -100,
       opacity: 0,
       stagger: 0.2,
       duration: 1.5,
@@ -71,11 +71,11 @@ export default function CompareGame({ questionData, onComplete }: Props) {
 
   return (
     <div ref={containerRef} className="glass-panel p-8 w-full flex flex-col items-center gap-12">
-      <h2 className="text-2xl md:text-3xl text-center text-white font-bold">
+      <h2 className="relative z-10 text-2xl md:text-3xl text-center text-white font-bold">
         {questionData.question}
       </h2>
 
-      <div className="flex justify-center items-center gap-8 md:gap-16 w-full">
+      <div className="flex justify-center items-center gap-8 md:gap-16 w-full overflow-hidden py-8 -my-8">
         {questionData.fractions.map((frac: any, idx: number) => (
           <div
             key={idx}
